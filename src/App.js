@@ -6,8 +6,6 @@ export default function App() {
     <div className="App">
       <div className="container">
         <h1>Whether Weather</h1>
-        <br />
-        <button className="btn btn-primary"> Butts </button>
         <footer>
           Open source code by
           <a
