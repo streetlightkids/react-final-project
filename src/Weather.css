@@ -1,15 +1,15 @@
 .Weather {
   padding: 16px;
   margin: 30px;
-  background-color: violet;
-  border: 1px solid purple;
+  color: #424344;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  border: 1px solid #424344;
   border-radius: 4px;
 }
 .Weather form {
   margin-bottom: 20px;
 }
 .Weather h1 {
-  color: seashell;
   margin: 20px 0 0 0;
 }
 .Weather ul {
