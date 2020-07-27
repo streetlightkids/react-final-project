@@ -3,18 +3,18 @@ import "./Weather.css";
 import axios from "axios";
 
 export default function Weather() {
-  const [weatherData, setWeatherData] = useState({ready: false});
+  const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
-        ready: true, 
+      ready: true,
       temp: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       city: response.data.name,
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
       description: response.data.weather[0].description,
-      date: "Wednesday 07:00"
+      date: "Wednesday 07:00",
     });
   }
   if (weatherData.ready) {
@@ -53,7 +53,7 @@ export default function Weather() {
                 className="float-left"
               />
               <div className="float-left">
-                <span className="temp">{Math.round(weatherData.temp})</span>
+                <span className="temp">{Math.round(weatherData.temp)}</span>
                 <span className="unit">°C</span>
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function Weather() {
           <div className="col-6">
             <ul>
               <li>Humidity: {weatherData.humidity}</li>
-              <li>Wind: {weatherData.wind}</li>
+              <li>Wind: {weatherData.wind} km/h%</li>
             </ul>
           </div>
         </div>
