@@ -22,8 +22,10 @@
   list-style: none;
   line-height: 19px;
 }
-.Weather img {
+.Weather canvas {
+  margin-top: 5px;
   margin-right: 10px;
+  display: inline-block;
 }
 .Weather .temp {
   font-weight: 400;
