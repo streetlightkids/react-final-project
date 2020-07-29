@@ -18,7 +18,6 @@ export default function Weather(props) {
       country: response.data.sys.country,
       icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
-      timeZone: response.data.timezone,
     });
   }
 
