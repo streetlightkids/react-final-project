@@ -10,6 +10,7 @@
   margin-bottom: 20px;
 }
 .Weather #button {
+  margin-top: 2px;
   padding: 4px;
   background: #7ca6ba;
   border: 1px solid #7ca6ba;
