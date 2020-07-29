@@ -28,7 +28,7 @@ export default function WeatherInfo(props) {
             <div className="float-left">
               <WeatherIcon code={props.data.icon} />
             </div>
-            <div className="float-left">
+            <div className="d-flex justify-content-center">
               <TempUnit metric={props.data.temp} />
             </div>
           </div>
