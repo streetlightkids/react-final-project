@@ -34,13 +34,14 @@ export default function FormattedDate(props) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+  let timeZone = props.zone / 3600 - 1;
   return (
     <div>
       <li>
         {day} {month} {dateNumber}
       </li>
       <li>
-        {hours}:{minutes}
+        {hours}:{minutes} {timeZone}
       </li>
     </div>
   );

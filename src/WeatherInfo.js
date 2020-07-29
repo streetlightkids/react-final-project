@@ -15,7 +15,7 @@ export default function WeatherInfo(props) {
       <div className="row mt-2">
         <div className="col-6">
           <ul>
-            <FormattedDate date={props.data.date} />
+            <FormattedDate date={props.data.date} zone={props.data.timeZone} />
             <li className="text-capitalize">
               <em>{props.data.description}</em>
             </li>
