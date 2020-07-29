@@ -1,13 +1,18 @@
 .Weather {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   padding: 16px;
   margin: 30px;
-  color: #424344;
-  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   border: 1px solid #424344;
   border-radius: 4px;
+  max-width: 800px;
 }
 .Weather form {
   margin-bottom: 20px;
+}
+.Weather #button {
+  padding: 4px;
+  background: #7ca6ba;
+  border: 1px solid #7ca6ba;
 }
 .Weather h1 {
   margin: 20px 0 0 0;

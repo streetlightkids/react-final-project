@@ -1,0 +1,13 @@
+.TempUnit #cels-temp {
+  font-size: 58px;
+}
+.TempUnit #fahr-temp {
+  font-size: 58px;
+}
+.TempUnit #link {
+  color: #424344;
+}
+.TempUnit #link:hover {
+  text-decoration: none;
+  color: black;
+}

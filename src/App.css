@@ -1,7 +1,11 @@
 .App {
-  max-width: 600px;
-  margin: 30px auto;
+  margin: 0 auto;
   font-family: "Poppins", "Raleway", sans-serif;
+  color: #424344;
+}
+.App #weather-container {
+  display: flex;
+  justify-content: center;
 }
 .App footer {
   font-size: 11px;

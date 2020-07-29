@@ -1,4 +1,21 @@
+import React from "react";
 export default function FormattedDate(props) {
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let month = months[props.date.getMonth()];
+  let dateNumber = props.date.getDate();
   let days = [
     "Monday",
     "Tuesday",
@@ -17,5 +34,14 @@ export default function FormattedDate(props) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  return `${day} ${hours}:${minutes}`;
+  return (
+    <div>
+      <li>
+        {day} {month} {dateNumber}
+      </li>
+      <li>
+        {hours}:{minutes}
+      </li>
+    </div>
+  );
 }

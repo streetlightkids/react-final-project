@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./TempUnit.css";
 
 export default function TempUnit(props) {
   const [unit, setUnit] = useState("metric");
@@ -13,10 +14,12 @@ export default function TempUnit(props) {
   if (unit === "metric") {
     return (
       <div className="TempUnit">
-        <span className="temp">{Math.round(props.metric)}</span>
+        <span className="temp" id="cels-temp">
+          {Math.round(props.metric)}
+        </span>
         <span className="unit">
           °C |{" "}
-          <a href="/" onClick={showFahr}>
+          <a href="/" id="link" onClick={showFahr}>
             °F
           </a>
         </span>
@@ -26,9 +29,11 @@ export default function TempUnit(props) {
     let imperial = (props.metric * 9) / 5 + 32;
     return (
       <div className="TempUnit">
-        <span className="temp">{Math.round(imperial)}</span>
+        <span className="temp" id="fahr-temp">
+          {Math.round(imperial)}
+        </span>
         <span className="unit">
-          <a href="/" onClick={showCels}>
+          <a href="/" id="link" onClick={showCels}>
             °C
           </a>{" "}
           | °F
