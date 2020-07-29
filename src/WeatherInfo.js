@@ -23,10 +23,10 @@ export default function WeatherInfo(props) {
             <li>Wind: {Math.round(props.data.wind)} km/h</li>
           </ul>
         </div>
-        <div className="col-6">
+        <div className="col-6" id="big-box">
           <div className="clearfix">
             <div className="float-left">
-              <WeatherIcon code={props.data.icon} id="main-icon" />
+              <WeatherIcon code={props.data.icon} />
             </div>
             <div className="float-left">
               <TempUnit metric={props.data.temp} />

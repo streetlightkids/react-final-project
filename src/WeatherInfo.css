@@ -1,3 +1,22 @@
 .WeatherInfo #city-head {
   font-size: 30px;
 }
+.WeatherInfo ul {
+  padding: 0;
+  margin: 0 auto;
+}
+.WeatherInfo canvas {
+  padding: 15%;
+  background: seashell;
+  border-radius: 50%;
+}
+.WeatherInfo li {
+  font-size: 16px;
+  font-weight: 100;
+  list-style: none;
+  line-height: 19px;
+}
+.WeatherInfo #big-box {
+  margin: 0 auto;
+  padding: 0;
+}

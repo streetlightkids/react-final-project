@@ -1,8 +1,23 @@
+.TempUnit .temp {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  margin-left: 10px;
+}
+.TempUnit .unit {
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  top: -34px;
+  line-height: 1;
+}
 .TempUnit #cels-temp {
-  font-size: 58px;
+  margin-left: 20px;
+  font-size: 45px;
 }
 .TempUnit #fahr-temp {
-  font-size: 58px;
+  margin-left: 20px;
+  font-size: 45px;
 }
 .TempUnit #link {
   color: #424344;

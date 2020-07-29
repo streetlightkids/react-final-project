@@ -15,7 +15,7 @@ export default function TempUnit(props) {
     return (
       <div className="TempUnit">
         <span className="temp" id="cels-temp">
-          {Math.round(props.metric)}
+          <strong>{Math.round(props.metric)}</strong>
         </span>
         <span className="unit">
           °C |{" "}
@@ -30,7 +30,7 @@ export default function TempUnit(props) {
     return (
       <div className="TempUnit">
         <span className="temp" id="fahr-temp">
-          {Math.round(imperial)}
+          <strong>{Math.round(imperial)}</strong>
         </span>
         <span className="unit">
           <a href="/" id="link" onClick={showCels}>
