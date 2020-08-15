@@ -6,21 +6,6 @@
   border-radius: 4px;
   max-width: 600px;
 }
-@media (min-width: 400px) {
-  /* For mobile phones: */
-  .Weather {
-    width: 100%;
-  }
-  .Weather form {
-    margin-bottom: 20px;
-  }
-  .Weather #button {
-    margin-top: 2px;
-    padding: 4px;
-    background: #7ca6ba;
-    border: 1px solid #7ca6ba;
-  }
-}
 .Weather form {
   margin-bottom: 20px;
 }
