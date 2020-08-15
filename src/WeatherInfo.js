@@ -12,8 +12,8 @@ export default function WeatherInfo(props) {
           {props.data.city}, {props.data.country}
         </strong>
       </h1>
-      <div className="row mt-2">
-        <div className="col">
+      <div className="container">
+        <div className="item" id="list">
           <ul>
             <FormattedDate date={props.data.date} zone={props.data.timeZone} />
             <li className="text-capitalize">
@@ -23,14 +23,14 @@ export default function WeatherInfo(props) {
             <li>Wind: {Math.round(props.data.wind)} km/h</li>
           </ul>
         </div>
-        <div className="col" id="big-box">
-          <div className="clearfix">
-            <div className="float-left">
-              <WeatherIcon code={props.data.icon} />
-            </div>
-            <div>
-              <TempUnit metric={props.data.temp} />
-            </div>
+        <div className="item" id="icon">
+          <div>
+            <WeatherIcon code={props.data.icon} />
+          </div>
+        </div>
+        <div className="item" id="temp">
+          <div>
+            <TempUnit metric={props.data.temp} />
           </div>
         </div>
       </div>
