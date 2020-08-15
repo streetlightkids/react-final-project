@@ -4,7 +4,13 @@
   margin: 30px;
   border: 1px solid #424344;
   border-radius: 4px;
-  min-width: 700px;
+  max-width: 600px;
+}
+@media (max-width: 300px) {
+  /* For mobile phones: */
+  .Weather {
+    width: 100%;
+  }
 }
 .Weather form {
   margin-bottom: 20px;
