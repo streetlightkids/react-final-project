@@ -10,8 +10,6 @@
   display: flex;
   flex-direction: row;
 }
-.Weather .item {
-}
 .Weather form {
   margin-bottom: 20px;
 }
