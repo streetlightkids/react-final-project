@@ -6,7 +6,7 @@
   border-radius: 4px;
   max-width: 600px;
 }
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   /* For mobile phones: */
   .Weather {
     width: 100%;
